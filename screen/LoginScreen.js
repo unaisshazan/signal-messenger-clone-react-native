@@ -30,7 +30,8 @@ export default function LoginScreen() {
            
 
                 </View>
-                <Button title="Login"/>
+                <Button containerStyle={styles.button} title="Login"/>
+                <Button containerStyle={styles.button} type="outline" title="Register"/>
         </View>
     )
 }
