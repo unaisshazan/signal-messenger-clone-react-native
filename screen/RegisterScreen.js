@@ -11,8 +11,13 @@ export default function RegisterScreen({navigation}) {
                 Create A Signal Account
             </Text>
             <View style = {styles.inputContainer}>
-                
 
+              <Input
+               placeholder = "Full Name" 
+                autofocus type="text" 
+                value={name}
+              onChangeText = {(text) => setName(text)}
+              />
             </View>
         </KeyboardAvoidingView>
     )
