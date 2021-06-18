@@ -1,4 +1,6 @@
 import React from 'react'
+import { StatusBar } from 'expo-status-bar';
+
 import { KeyboardAvoidingView, StyleSheet, Text, View } from 'react-native'
 
 export default function RegisterScreen({navigation}) {
@@ -8,6 +10,10 @@ export default function RegisterScreen({navigation}) {
             <Text h3 style={{ marginBottom:50}}>
                 Create A Signal Account
             </Text>
+            <View style = {styles.inputContainer}>
+                
+
+            </View>
         </KeyboardAvoidingView>
     )
 }
