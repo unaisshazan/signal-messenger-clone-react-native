@@ -10,7 +10,7 @@ export default function LoginScreen() {
 
   }
     return (
-        <KeyboardAvoidingView style={styles.container}>
+        <KeyboardAvoidingView  behavior="padding" style={styles.container}>
             <StatusBar style="light" />
             <Image source = {{
                 uri:"https://upload.wikimedia.org/wikipedia/commons/4/4f/Signal_Blue_Icon.png",
@@ -35,6 +35,7 @@ export default function LoginScreen() {
                 </View>
                 <Button containerStyle={styles.button} onPress={signIn} title="Login"/>
                 <Button containerStyle={styles.button} type="outline" title="Register"/>
+                <View style={{height:100}}/>
         </KeyboardAvoidingView>
     )
 }
@@ -50,9 +51,12 @@ const styles = StyleSheet.create({
     },
 
     inputContainer:{
+        width:300.
 
     },
     button: { 
+        width: 200,
+        marginTop:10,
 
     },
 })
