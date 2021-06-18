@@ -12,7 +12,11 @@ export default function LoginScreen() {
             }} 
             style={{width:200, height:200}}
             />
-            <View style={styles.inputContainer}> </View>
+            <View style={styles.inputContainer}>
+                
+                <Input  placeholder="Email" autoFocus type="email"/> 
+                <Input  placeholder="Password" secureTextEntry autoFocus type="password"/> 
+                </View>
         </View>
     )
 }
@@ -20,6 +24,6 @@ export default function LoginScreen() {
 const styles = StyleSheet.create({
 
     inputContainer:{
-        
+
     },
 })
