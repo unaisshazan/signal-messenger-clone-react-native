@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { StyleSheet, Text, View } from 'react-native';
 import { Button, Input , Image } from 'react-native-elements';
 import { StatusBar } from 'expo-status-bar';
 
 export default function LoginScreen() {
-    const [ema]
+  const [email, setEmail] = useState('')
+  const [password, setPassword] =  useState('')
     return (
         <View>
             <StatusBar style="light" />
@@ -15,7 +16,7 @@ export default function LoginScreen() {
             />
             <View style={styles.inputContainer}>
                 
-                <Input  placeholder="Email" autoFocus type="email"/> 
+                <Input  placeholder="Email" autoFocus type="email" value={email} onChangeText={(text)=> setEmail(text)}/> 
                 <Input  placeholder="Password" secureTextEntry autoFocus type="password"/> 
                 </View>
         </View>
