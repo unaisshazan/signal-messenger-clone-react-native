@@ -12,8 +12,14 @@ export default function LoginScreen() {
             }} 
             style={{width:200, height:200}}
             />
+            <View style={styles.inputContainer}> </View>
         </View>
     )
 }
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+
+    inputContainer:{
+        
+    },
+})
