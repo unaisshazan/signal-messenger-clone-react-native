@@ -1,5 +1,6 @@
 import React from 'react'
 import { StatusBar } from 'expo-status-bar';
+import { Button, Input , Image } from 'react-native-elements';
 
 import { KeyboardAvoidingView, StyleSheet, Text, View } from 'react-native'
 
