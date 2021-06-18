@@ -16,8 +16,17 @@ export default function LoginScreen() {
             />
             <View style={styles.inputContainer}>
                 
-                <Input  placeholder="Email" autoFocus type="email" value={email} onChangeText={(text)=> setEmail(text)}/> 
-                <Input  placeholder="Password" secureTextEntry autoFocus type="password"/> 
+                <Input  
+                placeholder="Email" 
+                autoFocus type="email" 
+                value={email}
+                 onChangeText={(text)=> setEmail(text)}/> 
+
+                <Input 
+                 placeholder="Password" secureTextEntry autoFocus type="password"
+                 value={password}
+                 onChangeText={(text)=> setPassword(text)}
+                 /> 
                 </View>
         </View>
     )
