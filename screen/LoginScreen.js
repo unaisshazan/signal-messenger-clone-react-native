@@ -10,7 +10,7 @@ export default function LoginScreen() {
 
   }
     return (
-        <View style={style.container}>
+        <View style={styles.container}>
             <StatusBar style="light" />
             <Image source = {{
                 uri:"https://upload.wikimedia.org/wikipedia/commons/4/4f/Signal_Blue_Icon.png",
@@ -40,7 +40,11 @@ export default function LoginScreen() {
 }
 
 const styles = StyleSheet.create({
-    container:{ },
+    container:{ 
+        flex:1,
+        alignItems:"center",
+        
+    },
 
     inputContainer:{
 
