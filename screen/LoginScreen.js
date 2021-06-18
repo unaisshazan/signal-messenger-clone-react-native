@@ -4,6 +4,7 @@ import { Button, Input , Image } from 'react-native-elements';
 import { StatusBar } from 'expo-status-bar';
 
 export default function LoginScreen() {
+    const [ema]
     return (
         <View>
             <StatusBar style="light" />
