@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet,   Text, View } from 'react-native';
 import { Button, Input , Image } from 'react-native-elements';
 import { StatusBar } from 'expo-status-bar';
 
@@ -27,7 +27,10 @@ export default function LoginScreen() {
                  value={password}
                  onChangeText={(text)=> setPassword(text)}
                  /> 
+           
+
                 </View>
+                <Button title="Login"/>
         </View>
     )
 }
