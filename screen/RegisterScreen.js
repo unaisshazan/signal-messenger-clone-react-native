@@ -4,7 +4,10 @@ import { KeyboardAvoidingView, StyleSheet, Text, View } from 'react-native'
 export default function RegisterScreen({navigation}) {
     return (
         <KeyboardAvoidingView behavior="padding" style={styles.container}>
-            <Text>dd</Text>
+              <StatusBar style="light" />
+            <Text h3 style={{ marginBottom:50}}>
+                Create A Signal Account
+            </Text>
         </KeyboardAvoidingView>
     )
 }
