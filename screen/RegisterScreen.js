@@ -1,10 +1,10 @@
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 
-export default function RegisterScreen() {
+export default function RegisterScreen({navigation}) {
     return (
         <View>
-            <Text></Text>
+            <Text>dd</Text>
         </View>
     )
 }
