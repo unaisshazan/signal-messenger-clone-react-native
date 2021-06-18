@@ -6,8 +6,11 @@ import { StatusBar } from 'expo-status-bar';
 export default function LoginScreen() {
   const [email, setEmail] = useState('')
   const [password, setPassword] =  useState('')
+  const signIn = ()=>{
+
+  }
     return (
-        <View>
+        <View style={style.container}>
             <StatusBar style="light" />
             <Image source = {{
                 uri:"https://upload.wikimedia.org/wikipedia/commons/4/4f/Signal_Blue_Icon.png",
@@ -30,15 +33,19 @@ export default function LoginScreen() {
            
 
                 </View>
-                <Button containerStyle={styles.button} title="Login"/>
+                <Button containerStyle={styles.button} onPress={signIn} title="Login"/>
                 <Button containerStyle={styles.button} type="outline" title="Register"/>
         </View>
     )
 }
 
 const styles = StyleSheet.create({
+    container:{ },
 
     inputContainer:{
+
+    },
+    button: { 
 
     },
 })
