@@ -3,18 +3,16 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
 export default function App() {
-    return ( <
-        View style = { styles.container } >
-        <
-        Text > lets build signal < /Text> <
-        StatusBar style = "auto" / >
-        <
-        /View>
+    return ( 
+    <View style={styles.container}>
+        <Text>Open up App.tsx to start working on your app!</Text>
+     
+      </View>
     );
 }
 
 const styles = StyleSheet.create({
-    container: {
+       container: {
         flex: 1,
         backgroundColor: '#fff',
         alignItems: 'center',
