@@ -15,7 +15,7 @@ const globalScreenOptions = {
 
 export default function App() {
     return ( 
-        <NavigationContainer >  
+        <NavigationContainer  >  
             <Stack.Navigator screenOptions={globalScreenOptions}>
             <Stack.Screen name="Login" component={LoginScreen} />
             </Stack.Navigator>
