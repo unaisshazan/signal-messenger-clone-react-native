@@ -10,14 +10,12 @@ const Stack = createStackNavigator();
 
 export default function App() {
     return ( 
-        <NavigationContainer>  
+        <NavigationContainer >  
+            <Stack.Navigator>
             <Stack.Screen name="Login" component={LoginScreen} />
-             
-        <View style={styles.container}>
-        <StatusBar style="auto"></StatusBar>
-        <Text>Lets build signal..</Text>
-     
-          </View>
+            </Stack.Navigator>
+           
+       
          </NavigationContainer>
 
     );
