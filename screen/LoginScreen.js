@@ -13,7 +13,7 @@ export default function LoginScreen({navigation}) {
         <KeyboardAvoidingView  behavior="padding" style={styles.container}>
             <StatusBar style="light" />
             <Image source = {{
-                uri:"https://upload.wikimedia.org/wikipedia/commons/4/4f/Signal_Blue_Icon.png",
+                uri:"https://blog.mozilla.org/internetcitizen/files/2018/08/signal-logo.png",
             }} 
             style={{width:200, height:200}}
             />
