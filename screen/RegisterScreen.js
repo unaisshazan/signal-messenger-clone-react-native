@@ -16,12 +16,19 @@ export default function RegisterScreen({navigation}) {
             headerBackTitle:"Back to Login",
         });
     }, [navigation]);
-    const register = {} ={
-        auth
-        .createUserWithEmailAndPassword(email,password)
-        .then(authUser =>{})
-        .catch(error=> alert(error.message))
-    };
+    
+    const register = () => {
+        auth.createUserWithEmailAndPassword(email, password)
+            .then(authUser => {
+                authUser.user.updateProfile({
+                    displayName: name,
+                    photoURL: imageUrl || "https://cencup.com/wp-content/uploads/2019/07/avatar-placeholder.png",
+
+
+                })
+            })
+            .catch((error) => alert(error.message))
+    }
 
     return (
         <KeyboardAvoidingView behavior="padding" style={styles.container}>
