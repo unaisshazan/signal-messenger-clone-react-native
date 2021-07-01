@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import { StatusBar } from 'expo-status-bar';
-import { Button, Input , Image } from 'react-native-elements';
+import { Button,Text, Input , Image } from 'react-native-elements';
 
-import { KeyboardAvoidingView, StyleSheet, Text, View } from 'react-native'
+import { KeyboardAvoidingView, StyleSheet,  View } from 'react-native'
 
 export default function RegisterScreen({navigation}) {
     
@@ -48,7 +48,10 @@ export default function RegisterScreen({navigation}) {
               onChangeText = {(text) => setImageUrl(text)}
                onSubmitEditing={register}
               />
-
+             <Button
+             style = {styles.button}
+              raised onPress={register} 
+              title = "Register" />
             </View>
         </KeyboardAvoidingView>
     )
@@ -60,4 +63,7 @@ const styles = StyleSheet.create({
 
 
     },
+    button:{
+
+    }
 })
