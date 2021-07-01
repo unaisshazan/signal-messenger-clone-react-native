@@ -53,6 +53,7 @@ export default function RegisterScreen({navigation}) {
               raised onPress={register} 
               title = "Register" />
             </View>
+            <View style={{height:100}}> </View>
         </KeyboardAvoidingView>
     )
 }
@@ -60,7 +61,11 @@ export default function RegisterScreen({navigation}) {
 const styles = StyleSheet.create({
     container: { 
 
-
+flex:1,
+alignItems:"center",
+justifyContent:"center",
+padding:10,
+backgroundColor:"white",
 
     },
     button:{
