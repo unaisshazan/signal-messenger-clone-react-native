@@ -48,12 +48,14 @@ export default function RegisterScreen({navigation}) {
               onChangeText = {(text) => setImageUrl(text)}
                onSubmitEditing={register}
               />
-             <Button
+           
+            </View>
+            <Button
              style = {styles.button}
               raised onPress={register} 
               title = "Register" />
-            </View>
-            <View style={{height:100}}> </View>
+            <View style={{height:100}}/> 
+            
         </KeyboardAvoidingView>
     )
 }
@@ -69,6 +71,10 @@ backgroundColor:"white",
 
     },
     button:{
-
+width:200,
+marginTop:10,
+    },
+    inputContainer:{
+        width:300,
     }
 })
