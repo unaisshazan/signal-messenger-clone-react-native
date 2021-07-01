@@ -1,3 +1,4 @@
+import * as firebase from "firebase";
 var firebaseConfig = {
     apiKey: "AIzaSyC7HNVYM7QnPq-Il55fXeezGXwh-ZDMS24",
     authDomain: "signal-6b28d.firebaseapp.com",
