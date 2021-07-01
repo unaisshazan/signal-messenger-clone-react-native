@@ -1,7 +1,7 @@
 import React, { useLayoutEffect, useState } from 'react'
 import { StatusBar } from 'expo-status-bar';
 import { Button,Text, Input , Image } from 'react-native-elements';
-
+import auth from '../firebase';
 import { KeyboardAvoidingView, StyleSheet,  View } from 'react-native'
 
 export default function RegisterScreen({navigation}) {
@@ -16,7 +16,12 @@ export default function RegisterScreen({navigation}) {
             headerBackTitle:"Back to Login",
         });
     }, [navigation]);
-    const register = {} ={};
+    const register = {} ={
+        auth
+        .createUserWithEmailAndPassword(email,password)
+        .then(authUser =>{})
+        .catch(error=> alert(error.message))
+    };
 
     return (
         <KeyboardAvoidingView behavior="padding" style={styles.container}>
