@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { StatusBar } from 'expo-status-bar';
 import { Button, Input , Image } from 'react-native-elements';
 
@@ -8,8 +8,9 @@ export default function RegisterScreen({navigation}) {
     
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("")
-    const [ImageUrl, setImageUrl] = useState("")
+    const [password, setPassword] = useState("");
+    const [ImageUrl, setImageUrl] = useState("");
+    const register = {} ={};
 
     return (
         <KeyboardAvoidingView behavior="padding" style={styles.container}>
@@ -29,22 +30,23 @@ export default function RegisterScreen({navigation}) {
               <Input
                placeholder = "Email" 
                 autofocus type="email" 
-                value={name}
-              onChangeText = {(email) => setEmail(text)}
+                value={email}
+              onChangeText = {(text) => setEmail(text)}
               />
               
               <Input
                placeholder = "Password" 
                 autofocus type="text" 
-                value={name}
-              onChangeText = {(password)=> setPassword(text)}
+                value={password}
+              onChangeText = {(text)=> setPassword(text)}
               />
               
               <Input
-               placeholder = "Full Name" 
+               placeholder = "Profile Pic Url (Optional)" 
                 autofocus type="text" 
-                value={name}
-              onChangeText = {(ImageUrl) => setImageUrl(text)}
+                value={ImageUrl}
+              onChangeText = {(text) => setImageUrl(text)}
+               onSubmitEditing={register}
               />
 
             </View>
