@@ -2,10 +2,14 @@ import React, { useState } from 'react'
 import { KeyboardAvoidingView, StyleSheet,   Text, View } from 'react-native';
 import { Button, Input , Image } from 'react-native-elements';
 import { StatusBar } from 'expo-status-bar';
+import { useEffect } from 'react';
 
 export default function LoginScreen({navigation}) {
-  const [email, setEmail] = useState('')
-  const [password, setPassword] =  useState('')
+  const [email, setEmail] = useState('');
+  const [password, setPassword] =  useState('');
+  useEffect(() => {
+    
+  }, [])
   const signIn = ()=>{
 
   }

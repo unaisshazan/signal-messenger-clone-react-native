@@ -1,4 +1,7 @@
-import * as firebase from "firebase";
+  
+import firebase from "firebase";
+import "firebase/firestore";
+import "firebase/auth";
 var firebaseConfig = {
     apiKey: "AIzaSyC7HNVYM7QnPq-Il55fXeezGXwh-ZDMS24",
     authDomain: "signal-6b28d.firebaseapp.com",
@@ -9,14 +12,15 @@ var firebaseConfig = {
     measurementId: "G-44CSKP7ESH"
   };
 
-let app;
-if(firebase.app.length==0){
-const firebaseApp = firebase.initializeApp(firebaseConfig);}
-else{
-  app = firebase.app();
-}
+  let app;
 
-const db = app.firestore();
-const auth = firebase.auth();
-
-export {db,auth};
+  if (firebase.apps.length === 0) {
+    app = firebase.initializeApp(firebaseConfig);
+  } else {
+    app = firebase.app();
+  }
+  
+  const db = app.firestore();
+  const auth = firebase.auth();
+  
+  export { db, auth };
