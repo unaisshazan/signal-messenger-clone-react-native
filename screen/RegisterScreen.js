@@ -5,6 +5,7 @@ import { Button, Input , Image } from 'react-native-elements';
 import { KeyboardAvoidingView, StyleSheet, Text, View } from 'react-native'
 
 export default function RegisterScreen({navigation}) {
+    const [name, setName] = useState("")
     return (
         <KeyboardAvoidingView behavior="padding" style={styles.container}>
               <StatusBar style="light" />
@@ -19,11 +20,37 @@ export default function RegisterScreen({navigation}) {
                 value={name}
               onChangeText = {(text) => setName(text)}
               />
+              
+              <Input
+               placeholder = "Full Name" 
+                autofocus type="text" 
+                value={name}
+              onChangeText = {(text) => setName(text)}
+              />
+              
+              <Input
+               placeholder = "Full Name" 
+                autofocus type="text" 
+                value={name}
+              onChangeText = {(text) => setName(text)}
+              />
+              
+              <Input
+               placeholder = "Full Name" 
+                autofocus type="text" 
+                value={name}
+              onChangeText = {(text) => setName(text)}
+              />
+              
             </View>
         </KeyboardAvoidingView>
     )
 }
 
 const styles = StyleSheet.create({
-    container: { },
+    container: { 
+
+
+
+    },
 })
